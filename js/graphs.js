@@ -7,12 +7,12 @@ const PLAVEHOLDER_DATA = [
 ];
 
 //API FETCH
-// async function getData() {
-//     const api_url = "https://makeup-api.herokuapp.com/api/v1/products.json";
-//     const api_data = await fetch(api_url);
-//     const api_json = await api_data.json();
-//     const PLAVEHOLDER_DATA = api_json.slice(0,5);
-//     console.log(api_data);
+async function getData() {
+    const api_url = "https://makeup-api.herokuapp.com/api/v1/products.json";
+    const api_data = await fetch(api_url);
+    const api_json = await api_data.json();
+    const PLAVEHOLDER_DATA = api_json.slice(0,6);
+    console.log(api_data);
 
 
 let selected = PLAVEHOLDER_DATA;
@@ -118,6 +118,6 @@ countryList.append('input')
 })
 ;
 
-// }
+}
 
 getData()
