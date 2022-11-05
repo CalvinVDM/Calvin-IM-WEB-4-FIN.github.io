@@ -6,8 +6,10 @@
 <title>Design</title>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="visStyle.css">
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
 <script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="visuals.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oleo+Script+Swash+Caps&family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap" rel="style.css"></head>
@@ -26,7 +28,7 @@
 						<li><a href="blogmain.html">Blog</a></li>
 						<li><a href="Design.html">Design</a></li>
 						<li><a href="test.html">Data-Visualization</a></li>
-						<li><a href="#">Data-Art</a></li>
+						<li><a href="dataArt.html">Data-Art</a></li>
 					</ul>
 			</nav>
 
@@ -42,24 +44,27 @@
 		<li><a href="blogmain.html">Blog</a></li>
 		<li><a href="Design.html">Design</a></li>
 		<li><a href="test.html">Data-Visualization</a></li>
-		<li><a href="#">Data-Art</a></li>
+		<li><a href="dataArt.html">Data-Art</a></li>
 	</ul>
 </article>
 
 <div class="block-row homepage_wireframe" id="section6" data-parallax="scroll" data-image-src ="images/bgblog.jpg" >
-	<div id="app">
-        <div id="chart">
-            <svg></svg>
+	<section class="visuals" >
+    
 
-        </div>
-
-        <div id="data">
-            <ul></ul>
-
-        </div>
-    </div>
-
-    <script src="js/graphs.js"></script>
+		<main>
+	
+		  <div id="chart">
+			<div id="chart3">
+			  <h2 class="name">Internet users by country in 2022(in millions)</h2>
+			  <svg id="svg3"></svg>
+			</div>
+			<div id="data">
+			  <ul></ul>
+			</div>
+		  </div>
+		</main>
+	</section>
 </div>
 
 			 
